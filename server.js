@@ -2,7 +2,7 @@
 const path = require("path");
 const express = require("express");
 const bodyParser = require("body-parser");
-const burgerControllerRoute = require("./controllers/burgers-controller");
+const burgerControllerRoute = require("./controllers/burgers_controller");
 
 const app = express();
 
