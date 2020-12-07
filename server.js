@@ -2,6 +2,7 @@
 const path = require("path");
 const express = require("express");
 const bodyParser = require("body-parser");
+const burgerControllerRoute = require("./controllers/burgers-controller");
 
 const app = express();
 
@@ -12,6 +13,8 @@ const PORT = process.env.PORT || 8080;
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded()); // parse body for form data type
 app.use(bodyParser.json()); // parse body for json data type
+
+app.use(burgerControllerRoute);
 
 // Routes
 app.get("/", function (req, res) {
