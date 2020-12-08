@@ -23,6 +23,12 @@ router.put("/burgers/:id", function (req, res) {
 	});
 });
 
+router.delete("/burgers/:id", function (req, res) {
+	burger.deleteBurger(req.params.id, function () {
+		res.sendStatus(200);
+	});
+});
+
 router.get("*", function (req, res) {
 	burger.getAllBurger(function (burgers) {
 		res.render("index", { burgers });

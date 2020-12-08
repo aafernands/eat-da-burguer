@@ -10,6 +10,9 @@ var burger = {
 	devourBurger: (burgerId, cb) => {
 		orm.updateOne("burgers", burgerId, cb);
 	},
+	deleteBurger: (burgerId, cb) => {
+		orm.deleteOne("burgers", burgerId, cb);
+	},
 };
 
 module.exports = burger;

@@ -40,7 +40,18 @@ var orm = {
 			}
 		);
 	},
-	deleteOne: (table, burgerId, cb) => {},
+	deleteOne: (table, burgerId, cb) => {
+		var queryString = "DELETE FROM ?? WHERE id = ?";
+		var query = connection.query(
+			queryString,
+			[table, burgerId],
+			function (err, result) {
+				if (err) throw err;
+				console.log(result);
+				cb(result);
+			}
+		);
+	},
 };
 
 module.exports = orm;
