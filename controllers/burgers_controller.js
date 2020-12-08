@@ -17,6 +17,12 @@ router.post("/burgers", function (req, res) {
 	});
 });
 
+router.put("/burgers/:id", function (req, res) {
+	burger.devourBurger(req.params.id, function () {
+		res.sendStatus(200);
+	});
+});
+
 router.get("*", function (req, res) {
 	burger.getAllBurger(function (burgers) {
 		res.render("index", { burgers });

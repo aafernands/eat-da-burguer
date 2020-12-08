@@ -7,6 +7,9 @@ var burger = {
 	addBurger: (burgerName, cb) => {
 		orm.insertOne("burgers", burgerName, cb);
 	},
+	devourBurger: (burgerId, cb) => {
+		orm.updateOne("burgers", burgerId, cb);
+	},
 };
 
 module.exports = burger;

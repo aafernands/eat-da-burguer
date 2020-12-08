@@ -20,7 +20,7 @@ $(function () {
 		const id = $(this).data("id");
 		console.log(id);
 		$.ajax({
-			method: "DELETE",
+			method: "PUT",
 			url: "/burgers/" + id,
 		}).then(function (response) {
 			location.reload();

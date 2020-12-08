@@ -28,8 +28,19 @@ var orm = {
 			}
 		);
 	},
-	updateOne: () => {},
-	deleteOne: () => {},
+	updateOne: (table, burgerId, cb) => {
+		var queryString = "UPDATE ?? SET devoured = 1 WHERE id = ?";
+		var query = connection.query(
+			queryString,
+			[table, burgerId],
+			function (err, result) {
+				if (err) throw err;
+				console.log(result);
+				cb(result);
+			}
+		);
+	},
+	deleteOne: (table, burgerId, cb) => {},
 };
 
 module.exports = orm;
