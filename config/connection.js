@@ -2,11 +2,11 @@ const util = require("util");
 const mysql = require("mysql");
 
 const connection = mysql.createConnection({
-	host: "localhost",
+	host: process.env.DB_HOST || "localhost",
 	// Your username
-	user: "root",
+	user: process.env.DB_USER || "root",
 	// Your password
-	password: "password",
+	password: process.env.DB_PASS || "password",
 	database: "eat_da_burger",
 });
 
