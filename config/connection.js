@@ -7,8 +7,11 @@ const connection = mysql.createConnection({
 	user: process.env.DB_USER || "root",
 	// Your password
 	password: process.env.DB_PASS || "password",
-	database: "eat_da_burger",
+	database: process.env.DB_NAME || "eat_da_burger",
 });
+
+// const connectionString = 'mysql://...'
+// const connection = mysql.createConnection(process.env.JAWSDB_URL || connectionString);
 
 connection.connect();
 
