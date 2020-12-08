@@ -16,7 +16,19 @@ var orm = {
 		console.log(query.sql);
 		cb(query);
 	},
-	insertOne: () => {},
+	insertOne: (table, burgerName, cb) => {
+		var queryString = "INSERT INTO ?? (burger_name) VALUES (?)";
+		var query = connection.query(
+			queryString,
+			[table, burgerName],
+			function (err, result) {
+				if (err) throw err;
+				console.log(result);
+			}
+		);
+		console.log(query.sql);
+		cb(query);
+	},
 	updateOne: () => {},
 	deleteOne: () => {},
 };
