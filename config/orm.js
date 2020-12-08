@@ -12,9 +12,9 @@ var orm = {
 		var query = connection.query(queryString, [table], function (err, result) {
 			if (err) throw err;
 			console.log(result);
+
+			cb(result);
 		});
-		console.log(query.sql);
-		cb(query);
 	},
 	insertOne: (table, burgerName, cb) => {
 		var queryString = "INSERT INTO ?? (burger_name) VALUES (?)";
@@ -24,10 +24,9 @@ var orm = {
 			function (err, result) {
 				if (err) throw err;
 				console.log(result);
+				cb(result);
 			}
 		);
-		console.log(query.sql);
-		cb(query);
 	},
 	updateOne: () => {},
 	deleteOne: () => {},

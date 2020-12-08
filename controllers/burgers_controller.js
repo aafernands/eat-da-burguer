@@ -17,4 +17,10 @@ router.post("/burgers", function (req, res) {
 	});
 });
 
+router.get("*", function (req, res) {
+	burger.getAllBurger(function (burgers) {
+		res.render("index", { burgers });
+	});
+});
+
 module.exports = router;
