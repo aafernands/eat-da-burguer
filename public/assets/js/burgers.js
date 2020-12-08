@@ -12,8 +12,18 @@ $(function () {
 				name: burgerName,
 			},
 		}).then(function (response) {
-			console.log("******************** response **********************");
-			console.log(response);
+			location.reload();
+		});
+	});
+
+	$("#not_devoured button").on("click", function (event) {
+		const id = $(this).data("id");
+		console.log(id);
+		$.ajax({
+			method: "DELETE",
+			url: "/burgers/" + id,
+		}).then(function (response) {
+			location.reload();
 		});
 	});
 });
