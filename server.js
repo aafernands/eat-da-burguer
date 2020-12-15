@@ -14,8 +14,8 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded()); // parse body for form data type
 app.use(bodyParser.json()); // parse body for json data type
 
-app.set("views", "./views");
-app.set("view engine", "pug");
+// app.set("views", "./views");
+// app.set("view engine", "pug");
 
 app.use(burgerControllerRoute);
 
