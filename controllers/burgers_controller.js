@@ -6,6 +6,7 @@ var burger = require("../models/burger");
 router.get("/burgers", function (req, res) {
 	burger.getAllBurger(function (burgers) {
 		console.log(burgers);
+		res.json(burgers);
 	});
 });
 
@@ -30,9 +31,7 @@ router.delete("/burgers/:id", function (req, res) {
 });
 
 router.get("*", function (req, res) {
-	burger.getAllBurger(function (burgers) {
-		res.render("index", { burgers });
-	});
+	res.render("index");
 });
 
 module.exports = router;
