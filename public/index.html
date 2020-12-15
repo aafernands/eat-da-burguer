@@ -5,22 +5,25 @@
     <link rel="stylesheet" href="/assets/css/burger_style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eat-Da-Burguer</title>
 </head>
 
-<body><img src="/assets/img/burger.png" alt="">
-    <h1>Eat-Da-Burguer</h1>
-    <h6>Enter a burger you want to eat & click the "Submit" button.</h6>
-    <form id="burger-form">
-        <input name="burger-name" type="text">
-        <button>Submit</button>
-    </form>
-    <div class="row">
-        <div class="col-md-6" id="not_devoured">
-            <!-- dynamic row -->
-        </div>
-        <div class="col-md-6" id="devoured">
-            <!-- dynamic row -->
+<body>
+    <div class="container">
+        <img src="/assets/img/burger.png" alt="">
+        <h1>Eat-Da-Burguer</h1>
+        <h6>Enter a burger you want to eat & click the "Submit" button.</h6>
+        <form id="burger-form">
+            <input name="burger-name" type="text">
+            <button class="btn-sm">Submit</button>
+        </form>
+        <div class="row">
+            <div class="col-md-6" id="not_devoured">
+                <!-- dynamic row -->
+            </div>
+            <div class="col-md-6" id="devoured">
+                <!-- dynamic row -->
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
