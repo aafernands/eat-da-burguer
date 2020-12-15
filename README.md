@@ -4,7 +4,7 @@
 ![GitHub license](https://img.shields.io/badge/Made%20by-%40aafernands-orange)
 
 Deployed Aplication:
-[Note Taker App](https://my-note-takerapp.herokuapp.com/)
+[Eat-Da-Burger!](app-eat-da-burguer.herokuapp.com/)
 
 | Table of Contents |
 | ----------------- |
@@ -12,10 +12,20 @@ Deployed Aplication:
 | [Tests](#Tests)   |
 | [Summary](#Summary)
 | [Questions](#Questions) |
+| [Installation](#Installation) |
 | [License](#License) |
 
 ## Project Description
 
+This application is a burger logger with MySQL, Node, Express and a homemade ORM that allows you to create a burguer and devoure it also it uses the MVC design pattern.
+
+## Installation
+
+To run this application use the following command lines:
+
+`npm install`
+<br>
+`npm start`
 
 ## Usage
 
@@ -29,22 +39,12 @@ Deployed Aplication:
 
 ## Summary
 
-Steps taken to develop this assigment:
-
-- Frontend:
-  - Previously a HTML sctructure and CSS stylesheet was created;
-- Backend:
-  - Created HTML routes;
-  - A `data.json` file was created to store and retrieve notes using `fs` module;
-  - Created API routes (GET, POST and DELETE);
-  - When a new note is created an ID is generated using unix timestamp `Date.now()` making each note ID unique;
-- All links/buttons on this website works properly;
 - Some of the resources used on this project was:
 
-> [Bootstrap](https://getbootstrap.com/)<br /> [W3 Schools](https://www.w3schools.com/)<br /> [Express](https://www.npmjs.com/package/express)<br /> [Heroku](https://www.w3schools.com/)<br />
+  > [Bootstrap](https://getbootstrap.com/)<br /> [W3 Schools](https://www.w3schools.com/) <br/> [Express](https://www.npmjs.com/package/express)<br /> [Heroku](https://www.w3schools.com/)<br />
 
 - The final version was pushed to homework repository at:
-  > [github](https://github.com/aafernands)<br> [Heroku](https://dashboard.heroku.com/apps/my-note-takerapp)
+  > [github](https://github.com/aafernands)<br/> [Heroku](https://dashboard.heroku.com/apps/my-note-takerapp)
 
 ## Questions?
 
@@ -52,9 +52,9 @@ Steps taken to develop this assigment:
 
 Feel free to contact me for any question. I'd be more then happy to help.
 
-[Github](https://github.com/aafernands)
+> [Github](https://github.com/aafernands)
 
-[Email address](https://github.com/alexfernands@outlook.com)
+> [Email address](https://github.com/alexfernands@outlook.com)
 
 ## License
 
