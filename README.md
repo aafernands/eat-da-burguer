@@ -44,7 +44,7 @@ To run this application use the following command lines:
   > [Bootstrap](https://getbootstrap.com/)<br /> [W3 Schools](https://www.w3schools.com/) <br/> [Express](https://www.npmjs.com/package/express)<br /> [Heroku](https://www.w3schools.com/)<br />
 
 - The final version was pushed to homework repository at:
-  > [github](https://github.com/aafernands)<br/> [Heroku](https://dashboard.heroku.com/apps/my-note-takerapp)
+  > [github](https://github.com/aafernands/eat-da-burguer)<br/> [Heroku](https://github.com/aafernands/eat-da-burguer/blob/main/app-eat-da-burguer.herokuapp.com)
 
 ## Questions?
 
